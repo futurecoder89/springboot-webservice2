@@ -14,6 +14,8 @@ import spring.core.order.OrderServiceImpl;
 
 @Configuration
 public class AppConfig {
+
+
     @Bean
     public MemberService memberService() {
         return new MemberServiceImpl(memberRepository()); //생성자 주입
